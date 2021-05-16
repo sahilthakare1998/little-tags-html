@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.mainCointaner {
+  position: relative;
+  padding-top: 8%;
+  min-height: 64vh;
+}
+

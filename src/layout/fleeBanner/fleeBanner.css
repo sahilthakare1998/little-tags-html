@@ -1,0 +1,33 @@
+.fleemarket_banner {
+    height: 500px;
+    margin-top: -8%;
+    background-image: url("../../images/flee_market_baner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  
+
+/* text inide banner */
+
+.centered {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .line {
+    border: 2px solid;
+    width: 22%;
+    height: 2px;
+    margin: 13px;
+  }
+  
+  .sub-text {
+    display: flex;
+  }
+  
