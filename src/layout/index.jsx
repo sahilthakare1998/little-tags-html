@@ -24,7 +24,7 @@ function Layout() {
           <Switch>
             <Route path='/' strict exact component = {HomePage} />
             <Route path='/tshirt' strict exact component={Tshirt}></Route>
-            <Route path='/image-loader' strict exact component={ImageLoader}></Route>
+            <Route path='/image-loader' strict exact component={() => <ImageLoader height={'200px'} width={'200px'} />}></Route>
             <Redirect from="*" to="/" />                
           </Switch>
         </Router>
@@ -34,7 +34,7 @@ function Layout() {
        
       </div>
       <div class="fixed-bottom">
-      {/* <Footer /> */}
+      <Footer />
       </div>
      
     </>

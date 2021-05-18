@@ -1,9 +1,10 @@
 .card {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-  width: 30vw;
+  width: 25vw;
   overflow: hidden;
   border-radius: 10px;
   margin: 20px;
+  min-width: 300px;
 }
 
 .card-header{
@@ -13,9 +14,16 @@
   padding-top: 10vh;
 }
 
+/* .card-content{
+  height: 10vh;
+} */
+
 .item-cointaner {
     display: flex;
     padding: 20px;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
 }
 
 .animated-bg {
@@ -66,4 +74,17 @@
 .card-excerpt {
   color: #777;
   margin: 10px 0 20px;
+}
+
+.scrollToTop{
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+    right: 0;
+    top: 80vh;
+    background: transparent;
+    background-color: grey;
+    opacity: 35px;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
 }

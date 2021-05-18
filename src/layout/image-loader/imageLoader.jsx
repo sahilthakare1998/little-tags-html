@@ -6,18 +6,20 @@ function ImageLoader(props){
   let [height,setHeight] = useState(props.height) 
   let [src,setSrc] = useState() 
 
-  // let [width,setWidth] = useState('100px') 
-  // let [height,setHeight] = useState('100px') 
-  // let [src,setSrc] = useState({imageSlide1}) 
-
   useEffect(() => {
-
+    if(props.width && props.height){
+      setWidth(props.width)
+      setHeight(props.height)
+    }
+    else{
+      setHeight('200px')
+    }
      setTimeout(getData, 2500) 
   },[])
 
   function getData(){
-    
-      setSrc(props.src)
+   
+    setSrc(props.src)
   }
   return (
     <>
