@@ -1,9 +1,9 @@
 import "./sidebar.css";
 import { useEffect } from "react";
-
-function Sidebar() {
+import {NavLink} from 'react-router-dom'
+function Sidebar(props) {
   useEffect(() => {});
-  
+
   function closeMenu() {
     let menuOpen = document.querySelector(".nav__menu");
     let cointaner = document.querySelector(".mainCointaner");
@@ -13,7 +13,9 @@ function Sidebar() {
     menuOpen.style.width = "30rem";
   }
 
-
+  function navigate(event){
+    props.history.push(event.target.href)
+  }
   return (
     <>
       <div class="nav__menu">
@@ -30,24 +32,37 @@ function Sidebar() {
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#header" class="nav__link scroll-link">
-              Home
+              Accesserories
             </a>
+
+         
           </li>
           <li class="nav__item">
-            <a href="#category" class="nav__link scroll-link">
-              Category
+            <a href="/tshirt" class="nav__link scroll-link" onClick={navigate}>
+              Shirt
             </a>
           </li>
           <li class="nav__item">
             <a href="#news" class="nav__link scroll-link">
-              Blog
+              Pants
             </a>
+
+           
+
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link scroll-link">
-              Contact
+              Jackets
             </a>
           </li>
+
+          <li class="nav__item">
+            <a href="/image-loader" class="nav__link scroll-link">
+            image-loader
+            </a>
+          </li>
+
+         
         </ul>
       </div>
     </>

@@ -1,0 +1,33 @@
+.cointaner {
+ overflow:hidden;
+
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%
+  );
+
+}
+
+.animated-bg{
+  background-size: 200% 100%;
+  position: relative;
+  animation: bgPos 1s linear infinite;
+}
+
+.image{
+  max-width: 100%;
+  min-height: 100%;
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50%;
+  }
+
+  100% {
+    background-position: -150%;
+  }
+}

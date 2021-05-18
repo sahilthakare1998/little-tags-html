@@ -3,7 +3,9 @@ import { useEffect } from "react";
 import FleeBanner from "../../layout/fleeBanner/fleeBanner";
 
 function HomePage() {
-  useEffect(() => {});
+  useEffect(() => {
+    console.log('homePage')
+  });
 
   return (
     <>

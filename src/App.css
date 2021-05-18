@@ -40,8 +40,9 @@
 
 
 .mainCointaner {
+  background-color: #F8F8F8;
   position: relative;
-  padding-top: 8%;
+  padding-top: 12vh ;
   min-height: 64vh;
 }
 

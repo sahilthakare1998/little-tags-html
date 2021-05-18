@@ -1,0 +1,15 @@
+.cointaner{
+    width: 50%;
+    margin: auto;
+}
+
+.slide{
+    display: flex;
+    margin: 20px;
+    height: 500px;
+}
+
+.image-styling{
+    margin: 20px;
+    width: 100%;
+}

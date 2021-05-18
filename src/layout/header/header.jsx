@@ -1,7 +1,8 @@
 import "./header.css";
 import { useEffect } from "react";
+import {withRouter} from 'react-router-dom'
 
-function Header() {
+function Header(props) {
   useEffect(() => {});
 
   function openMenu() {
@@ -13,7 +14,9 @@ function Header() {
     menuOpen.style.width = "30rem";
   }
 
-
+  function cartClick(){
+    props.history.push('/tshirt')
+  }
 
   return (
     <>
@@ -32,7 +35,7 @@ function Header() {
                 </div>
 
                 <div class="nav__logo">
-                  <a href="/" class="scroll-link">
+                  <a href="/tshirt" class="scroll-link">
                     Little Tags
                   </a>
                 </div>
@@ -47,13 +50,13 @@ function Header() {
                 </div>
 
                 <div class="nav__icons">
-                  <p className="username">Sahil</p>
+                  <span className="username">Sahil</span>
                   <a href="#" class="icon__item">
                     <i className="fas fa-user"></i>
                   </a>
 
                   <a href="#" class="icon__item">
-                    <i class="fas fa-shopping-basket"></i>
+                    <i class="fas fa-shopping-basket" onClick={cartClick}></i>
                     <span id="cart__total">0</span>
                   </a>
                 </div>
@@ -67,4 +70,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default withRouter(Header);
